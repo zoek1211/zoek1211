@@ -1,0 +1,18 @@
+name: My YourTomo cat
+on:
+  schedule:
+    - cron: '23 */6 * * *'   # every 6h
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: prsdx/github-pet@v1
+        with:
+          username: zoek1211
+          timezone-offset-minutes: "540" # KST (UTC+9)
