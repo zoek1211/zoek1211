@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: prsdx/github-pet@v1
+      - uses: zoek1211/YourTomo@main
         with:
           username: zoek1211
           timezone-offset-minutes: "540" # KST (UTC+9)
